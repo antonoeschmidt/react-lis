@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+}
+
+.data-table-requests {
+    flex-grow: 2;
+}
+
+.detailed-view {
+    flex-grow: 2;
+    padding-left: 1em;
+}

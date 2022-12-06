@@ -1,0 +1,14 @@
+.status-msg {
+    padding: 0 0 0 10px;
+    border-color: rgb(133, 114, 114);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.machine-details {
+    border-left: solid;
+    border-color: #0000001f;
+    border-width: thin;
+    height: 100vh;
+    padding: 20px;
+}

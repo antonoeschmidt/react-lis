@@ -1,0 +1,22 @@
+{
+    "npn": "string",
+    "send_facility": "string",
+    "send_time": "2019-08-24T14:15:22Z",
+    "message_type": "ORU",
+    "create_time": "2019-08-24T14:15:22Z",
+    "parsed_data": {
+      "segments": [
+        {
+          "segment_id": "str",
+          "fields": [
+            {
+              "key": "string",
+              "value": "string"
+            }
+          ]
+        }
+      ]
+    },
+    "patient_ids": [
+    ]
+  }

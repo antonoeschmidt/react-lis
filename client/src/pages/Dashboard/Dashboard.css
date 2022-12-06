@@ -1,0 +1,12 @@
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.main-page {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 20px;
+}

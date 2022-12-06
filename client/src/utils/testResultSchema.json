@@ -1,0 +1,142 @@
+{
+  "type": "object",
+  "title": "Test Result Schema",
+  "required": ["npn", "parsed_data", "patient_ids"],
+  "properties": {
+    "npn": {
+      "type": "string",
+      "title": "The npn Schema"
+    },
+    "send_facility": {
+      "type": "string",
+      "title": "The send_facility Schema"
+    },
+    "send_time": {
+      "type": "string",
+      "title": "The send_time Schema"
+    },
+    "message_type": {
+      "type": "string",
+      "title": "The message_type Schema"
+    },
+    "create_time": {
+      "type": "string",
+      "title": "The create_time Schema"
+    },
+    "parsed_data": {
+      "type": "object",
+      "default": {},
+      "title": "The parsed_data Schema",
+      "required": ["segments"],
+      "properties": {
+        "segments": {
+          "type": "array",
+          "default": [],
+          "title": "The segments Schema",
+          "items": {
+            "type": "object",
+            "default": {},
+            "title": "A Schema",
+            "required": ["segment_id", "fields"],
+            "properties": {
+              "segment_id": {
+                "type": "string",
+                "default": "",
+                "title": "The segment_id Schema"
+              },
+              "fields": {
+                "type": "array",
+                "default": [],
+                "title": "The fields Schema",
+                "items": {
+                  "type": "object",
+                  "default": {},
+                  "title": "A Schema",
+                  "required": ["key", "value"],
+                  "properties": {
+                    "key": {
+                      "type": "string",
+                      "default": "",
+                      "title": "The key Schema"
+                    },
+                    "value": {
+                      "type": "string",
+                      "default": "",
+                      "title": "The value Schema"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "segment_id": "OBX",
+              "fields": [
+                {
+                  "key": "result",
+                  "value": "negative"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "patient_ids": {
+      "type": "array",
+      "default": [],
+      "title": "The patient_ids Schema",
+      "items": {
+        "type": "object",
+        "default": {},
+        "title": "A Schema",
+        "required": ["value", "type"],
+        "properties": {
+          "value": {
+            "type": "string",
+            "default": "",
+            "title": "The value Schema"
+          },
+          "type": {
+            "type": "string",
+            "default": "",
+            "title": "The type Schema"
+          }
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "npn": "string",
+      "send_facility": "string",
+      "send_time": "2019-08-24T14:15:22Z",
+      "message_type": "ORU",
+      "create_time": "2019-08-24T14:15:22Z",
+      "parsed_data": {
+        "segments": [
+          {
+            "segment_id": "str",
+            "fields": [
+              {
+                "key": "string",
+                "value": "string"
+              }
+            ]
+          }
+        ]
+      },
+      "patient_ids": [
+        {
+          "value": "string",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}

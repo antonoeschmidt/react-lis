@@ -1,0 +1,26 @@
+.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeSmall.MuiButton-textSizeSmall.MuiButtonBase-root.css-1knaqv7-MuiButtonBase-root-MuiButton-root {
+    color: #003662
+}
+
+#add-new-button {
+    background-color: #003662;
+    color: white;
+    padding: 4px 5px;
+    font-size: 0.8125rem;
+}
+
+@media screen and (min-width: 1400px) {
+    #data-table-testresults {
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 1600px) {
+    #data-table-testresults {
+      width: 75%;
+    }
+  }
+  @media screen and (min-width: 1900px) {
+    #data-table-testresults {
+      width: 50%;
+    }
+  }
